@@ -1,0 +1,127 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  height: 600px;
+  width: 700px;
+  display: block;
+  background: linear-gradient(0deg, black, #444444);
+  background-color: #4caf50;
+
+  color: white;
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+.glowing::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #e8f74d,
+    #ff6600d9,
+    #00ff66,
+    #13ff13,
+    #ad27ad,
+    #bd2681,
+    #6512b9,
+    #ff3300de,
+    #5aabde
+  );
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: glower 20s linear infinite;
+}
+
+@keyframes glower {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.login-title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.login form {
+  box-shadow: 0px 1px 5px black;
+  border: 1px solid #444444;
+  height: 400px;
+  margin: 50px 90px 5px;
+}
+.login label {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+.login input {
+  margin-bottom: 10px;
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.login button {
+  margin-top: 5px;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+.login button:hover {
+  background-color: #444444;
+  transition: 0.5s;
+  border: 1px solid white;
+}
+.login a {
+  margin-top: 600px;
+  border: 2px solid green;
+  padding: 10px 165px 10px 165px;
+  background-color: green;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+}
+.login a:hover {
+  background-color: #444444;
+  transition: 0.5s;
+  border: 1px solid white;
+}

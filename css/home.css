@@ -1,0 +1,25 @@
+p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    height: 500px;
+    color:red;
+}
+.logout a {
+  
+    margin-left: 450px;
+  border: 2px solid green;
+  padding: 10px 165px 10px 165px;
+  background-color: green;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+}
+.logout a:hover {
+  background-color: #444444;
+  transition: 0.5s;
+  border: 1px solid white;
+}
